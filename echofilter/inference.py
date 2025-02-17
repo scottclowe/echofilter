@@ -703,9 +703,11 @@ def run_inference(
             print(
                 "Echoview application would{} be opened {}.".format(
                     "" if do_open else " not",
-                    "to convert EV files to CSV"
-                    if do_open
-                    else "(no EV files to process)",
+                    (
+                        "to convert EV files to CSV"
+                        if do_open
+                        else "(no EV files to process)"
+                    ),
                 )
             )
         do_open = False

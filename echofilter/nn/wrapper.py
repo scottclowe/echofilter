@@ -119,7 +119,7 @@ class Echofilter(nn.Module):
         mapping_extra = {}
         for key in mapping:
             for alias_map in self.aliases:
-                for (alias_a, alias_b) in [alias_map, alias_map[::-1]]:
+                for alias_a, alias_b in [alias_map, alias_map[::-1]]:
                     if "_" + alias_a not in key:
                         continue
                     alt_key = key.replace("_" + alias_a, "_" + alias_b)
