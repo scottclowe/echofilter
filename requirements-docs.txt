@@ -4,3 +4,4 @@ sphinx<5,>=3.5.4
 sphinx-argparse
 sphinx-autobuild
 sphinx_book_theme
+sphinxcontrib-googleanalytics>=0.4
